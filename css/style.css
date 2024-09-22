@@ -1,0 +1,120 @@
+/*
+colors used:
+off-white (background, accent text): #f2f0ef
+dark brown (primary text): #624041
+pink (secondary text, fill): #e09294
+darker pink (tertiarty text): #be7C7e
+taupe (fill): #e2d0ba
+*/
+
+body {
+    background-color: #f2f0ef;
+    font-family: "Lexend", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    color: #624041;
+}
+
+h1 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 3em;
+    font-weight: 600px;
+    line-height: 1em;
+    color: #624041;
+}
+
+h2 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2.5em;
+    font-weight: 600px;
+    line-height: 1em;
+    color: #624041;
+}
+
+h3 {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 2em;
+    font-weight: 600px;
+    line-height: 1em;
+    color: #624041;
+}
+
+h4 {
+    font-size: 1.5em;
+    font-weight: 500;
+    line-height: 1em;
+    color: #624041;
+}
+
+h5 {
+    font-size: 1.25em;
+    font-weight: 500;
+    line-height: 1em;
+    color: #624041;
+}
+
+h6 {
+    font-size: 1em;
+    font-weight: 500;
+    line-height: 1em;
+    color: #624041;
+}
+
+img {
+    width: 100%;
+}
+
+a {
+    color: #e09294;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #be7C7e;
+}
+
+a:hover {
+    color: #624041;
+}
+
+a:active {
+    color: #624041;
+}
+
+.button {
+    color: #624041;
+    background-color: #e2d0ba;
+    border: 3px solid #e2d0ba;
+    padding: 5px;
+}
+
+.button.secondary {
+    background-color: transparent;
+    color: #e09294;
+    border: 3px solid #e09294;
+}
+
+.button.contact {
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 20px;
+    background-color: #e09294;
+    border: 3px solid #e09294;
+    color: #f2f0ef;
+}
+
+.button:visited {
+    color: #624041;
+}
+
+.button.secondary:visited {
+    color: #e09294;
+}
+
+.button:hover {
+    background-color: #ecbebf;
+    border: 3px solid #ecbebf;
+    color: #624041;
+}
+
