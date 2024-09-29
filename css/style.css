@@ -7,6 +7,7 @@ darker pink (tertiarty text): #be7C7e
 taupe (fill): #e2d0ba
 */
 
+/* general text styling */ 
 body {
     background-color: #f2f0ef;
     font-family: "Lexend", sans-serif;
@@ -19,7 +20,7 @@ body {
 h1 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 3em;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 1em;
     color: #624041;
 }
@@ -27,7 +28,7 @@ h1 {
 h2 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 2.5em;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 1em;
     color: #624041;
 }
@@ -35,9 +36,10 @@ h2 {
 h3 {
     font-family: "Nunito Sans", sans-serif;
     font-size: 2em;
-    font-weight: 600px;
+    font-weight: 600;
     line-height: 1em;
     color: #624041;
+    margin: 0;
 }
 
 h4 {
@@ -61,10 +63,32 @@ h6 {
     color: #624041;
 }
 
+/* text styling for specific classes or ids */
+
+#hero h1 {
+    text-align: center;
+} 
+
+#georgie h1 {
+    text-align: center;
+}
+
+#contact h2 {
+    margin: 0;
+}
+
+/* image styling */ 
+
 img {
     width: 100%;
 }
 
+.portfolio-images {
+    padding: 0 2rem;
+    text-align: center;
+}
+
+/* link styling */ 
 a {
     color: #e09294;
     font-weight: 400;
@@ -83,6 +107,7 @@ a:active {
     color: #624041;
 }
 
+/* button styling */ 
 .button {
     color: #624041;
     background-color: #e2d0ba;
@@ -118,3 +143,102 @@ a:active {
     color: #624041;
 }
 
+/* layout styling */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0;
+}
+
+#work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid black;
+}
+
+.section {
+    border-top: 3px solid #624041;
+    margin: 20px;
+}
+
+#skills ul {
+    margin: 8px 0;
+}
+
+/* header styling */
+
+header {
+    text-align: center;
+    position: relative;
+    background: #e2d0ba; 
+	border: solid #BDBDBD 0; 
+	box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
+	-webkit-box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
+	-moz-box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
+}
+
+.logo {
+    max-width: 250px;
+}
+
+nav {
+    display: inline-block;
+    width: 100%;
+}
+
+nav > ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav >ul >li {
+    display: inline-block;
+}
+
+nav > ul > li > a {
+    display: inline-block;
+    padding: 0 20px;
+    font-family: "Nunito Sans", sans-serif;
+    font-size: 1.25em;
+    font-weight: 600px;
+    color: #be7C7e;
+}
+
+nav > ul > li > a:visited {
+    color: #be7C7e;
+}
+
+nav > ul > li > a:hover {
+    color: #ffffff;
+}
+
+#hero {
+    background-color: #e2d0ba;
+    padding: 20px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
+/* footer styling */
+
+footer {
+    text-align: center;
+}
+
+.social {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    list-style-type: none;
+}
+
+.social > li {
+    display: inline-block;
+    padding: 20px;
+}
