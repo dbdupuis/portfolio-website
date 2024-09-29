@@ -21,8 +21,8 @@
 
 <body>
     <header>
-        <div>
-            <img src="img/about/danielle-logo.svg" alt="Danielle logo">
+        <div class="container">
+            <img class="logo" src="img/about/danielle-logo.svg" alt="Danielle logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
@@ -34,62 +34,53 @@
     </header>
     <main>
         <div>
-            <div id="hero">
+            <div class="container" id="hero">
                 <h1>Hi there, I'm Danielle!</h1>
                 <p>I'm a UX Designer and Marketer based in Denver, Colorado. I have experience in many fields and
                     different industries and I'm always looking to learn or create something new. Take a look at some of
                     my latest
                     work.</p>
             </div>
-            <div id="work">
+            <div class="container" id="work">
                 <div>
                     <h2>My Work</h2>
                 </div>
-                <div>
-                    <div>
-                        <picture>
-                            <source srcset="img/georgie/1x/img-georgie-thumbnail-1x.png" media="(max-width:767px)">
-                            <img src="img/georgie/2x/img-georgie-thumbnail-2x.png"
-                                alt="Thumbnail for Georgie, an all-in-one personal finance application.">
-                        </picture>
-                    </div>
-                    <div>
-                        <h3>Georgie</h3>
-                        <p>Georgie is a personal finance application I worked on from initital conception to functional prototype. I was the sole UX Researcher, UX Designer, UI Designer, and Project Manager for Georgie. I primarily used Figma and Adobe Illustrator to compete this project.</p>
-                        <a href="georgie.html" class="button">View Georgie</a>
-                    </div>
-                    <div>
-                        <picture>
-                            <source srcset="img/tailored-touchpoints/1x/img-tailored-touchpoints-thumbnail-1x.png"
-                                media="(max-width:767px)">
-                            <img src="img/tailored-touchpoints/2x/img-tailored-touchpoints-thumbnail-2x.png"
-                                alt="Thumbnail for Tailored Touchpoints, an account-based marketing project.">
-                        </picture>
-                        <div>
-                            <h3>Tailored Touchpoints</h3>
-                            <p>Tailored Touchpoints encompasses my work on a go-to-market strategy for a B2B SaaS
-                                company
-                                targeting
-                                the fast-moving consumer goods industry. For this project, I worked on a team and acted
-                                as
-                                the
-                                Project Manager. My responsibilites included creating email streams in Marketo, managin
-                                LinkedIn
-                                ads, and curating content.</p>
-                            <a href="#" class="button">View Tailored Touchpoints</a>
-                        </div>
-                    </div>
+                <div class="row">
+                    <picture>
+                        <source srcset="img/georgie/1x/img-georgie-thumbnail-1x.png" media="(max-width:767px)">
+                        <img src="img/georgie/2x/img-georgie-thumbnail-2x.png"
+                            alt="Thumbnail for Georgie, an all-in-one personal finance application.">
+                    </picture>
+                    <h3>Georgie</h3>
+                    <p>Georgie is a personal finance application I worked on from initital conception to functional
+                        prototype. I was the sole UX Researcher, UX Designer, UI Designer, and Project Manager for
+                        Georgie. I primarily used Figma and Adobe Illustrator to compete this project.</p>
+                    <a href="georgie.html" class="button">View Georgie</a>
+                </div>
+                <div class="row">
+                    <picture>
+                        <source srcset="img/tailored-touchpoints/1x/img-tailored-touchpoints-thumbnail-1x.png"
+                            media="(max-width:767px)">
+                        <img src="img/tailored-touchpoints/2x/img-tailored-touchpoints-thumbnail-2x.png"
+                            alt="Thumbnail for Tailored Touchpoints, an account-based marketing project.">
+                    </picture>
+                    <h3>Tailored Touchpoints</h3>
+                    <p>Tailored Touchpoints encompasses my work on a go-to-market strategy for a B2B SaaS company
+                        targeting the fast-moving consumer goods industry. For this project, I worked on a team and acted
+                        as the Project Manager. My responsibilites included creating email streams in Marketo, manage
+                        LinkedIn ads, and curating content.</p>
+                    <a href="tailored-touchpoints.html" class="button">View Tailored Touchpoints</a>
                 </div>
             </div>
         </div>
     </main>
     <footer>
-        <div id="contact">
+        <div class="container" id="contact">
             <h2>Get in touch with me!</h2>
             <p>Feel free to reach out to me <a href="tel: 8888888888">by phone</a> or follow my journey on social
                 media.</p>
             <a href="mailto: dbdupuis@gmail.com" class="button contact">Email me</a>
-            <ul>
+            <ul class="social">
                 <li><a href="https://www.linkedin.com/in/danielle-dupuis-141b30159/" target="_blank"><svg width="32"
                             height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd"
