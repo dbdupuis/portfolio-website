@@ -65,7 +65,7 @@ h6 {
 
 /* text styling for specific classes or ids */
 
-#hero h1 {
+#hero {
     text-align: center;
 } 
 
@@ -73,8 +73,16 @@ h6 {
     text-align: center;
 }
 
+#tailored-touchpoints h1 {
+    text-align: center;
+}
+
 #contact h2 {
     margin: 0;
+}
+
+.section h3 {
+    margin-top: 10px;
 }
 
 /* image styling */ 
@@ -87,6 +95,115 @@ img {
     padding: 0 2rem;
     text-align: center;
 }
+
+.chicago {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+@keyframes color-change {
+    0% {fill: #c0d5ef;}
+    50% {fill: #345c8c;}
+    100% {fill: #081b54;}
+  }
+  
+  @keyframes move-left-clouds {
+    from {transform: translate(0,25px);}
+    to {transform: translate(100px,25px);}
+  }
+  
+  @keyframes move-middle-cloud {
+    from {transform: translate(0,25px);}
+    to {transform: translate(0,-75px);}
+  }
+  
+  @keyframes move-right-clouds {
+    from {transform: translate(0,25px);}
+    to {transform: translate(-100px,25px);}
+  }
+  
+  .frame {
+      fill: none;
+    }
+  
+   [class*="cloud-"]{
+      fill: #faf9f6;
+    }
+  
+  .cloud-left {
+    animation-duration: 20s;
+    animation-name: move-left-clouds;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  .cloud-middle {
+    animation-duration: 20s;
+    animation-name: move-middle-cloud;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+  .cloud-right {
+    animation-duration: 20s;
+    animation-name: move-right-clouds;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+  }
+  
+    .building-back {
+      fill: #b0d4ff;
+    }
+  
+    .building-accent {
+      fill: #003b7d;
+    }
+  
+    .skyline-group {
+      clip-path: url(#clippath-1);
+    }
+  
+    .building-front {
+      fill: #002e61;
+    }
+  
+    .bg-fill {
+      fill: #c0d5ef;
+      animation-duration: 20s;
+      animation-name: color-change;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+      animation-timing-function: ease-in;
+    }
+  
+    .building-mid-g1 {
+      fill: #4283d1;
+    }
+  
+    .building-mid-g2 {
+      fill: #00418a;
+    }
+  
+    .bushes {
+      fill: #001226;
+    }
+  
+    .bottom {
+      fill: #002754;
+    }
+  
+    .bean {
+      fill: #0075fa;
+    }
+  
+    .bg-frame {
+      clip-path: url(#clippath);
+    }
 
 /* link styling */ 
 a {
@@ -112,7 +229,10 @@ a:active {
     color: #624041;
     background-color: #e2d0ba;
     border: 3px solid #e2d0ba;
+    border-radius: 10px;
     padding: 5px;
+    transition: 0.2s opacity;
+
 }
 
 .button.secondary {
@@ -141,10 +261,10 @@ a:active {
     background-color: #ecbebf;
     border: 3px solid #ecbebf;
     color: #624041;
+    opacity: 0.8;
 }
 
 /* layout styling */
-
 * {
     box-sizing: border-box;
 }
@@ -156,6 +276,12 @@ a:active {
 .row {
     margin: 25px 0;
 }
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
 
 #work .row {
     padding-bottom: 25px;
@@ -170,6 +296,11 @@ a:active {
 #skills ul {
     margin: 8px 0;
 }
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
 
 /* header styling */
 
@@ -241,4 +372,55 @@ footer {
 .social > li {
     display: inline-block;
     padding: 20px;
+}
+
+/* medium devices (640px and larger) */
+
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 10px 0;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin: 6px 0;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    #contact {
+        clear: both;
+    }
+
+}
+
+/* large devices (1024px and larger) */
+
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+/* extra large devices (1440px and larger) */
+
+@media only screen and (min-width: 1440px) {
 }
