@@ -31,6 +31,7 @@ h2 {
     font-weight: 600;
     line-height: 1em;
     color: #624041;
+    text-align: center;
 }
 
 h3 {
@@ -273,6 +274,13 @@ a:active {
     padding: 0 15px;
 }
 
+#hero {
+    background-color: #e2d0ba;
+    padding: 20px 15px;
+    display: inline-block;
+    width: 100%;
+}
+
 .row {
     margin: 25px 0;
 }
@@ -347,13 +355,6 @@ nav > ul > li > a:visited {
 
 nav > ul > li > a:hover {
     color: #ffffff;
-}
-
-#hero {
-    background-color: #e2d0ba;
-    padding: 20px 15px;
-    display: inline-block;
-    width: 100%;
 }
 
 /* footer styling */
