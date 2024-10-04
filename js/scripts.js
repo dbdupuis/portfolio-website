@@ -1,0 +1,1 @@
+console.log("Hi friend! Welcome to my portfolio site.");
