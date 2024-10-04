@@ -23,6 +23,7 @@ h1 {
     font-weight: 600;
     line-height: 1em;
     color: #624041;
+    text-align: center;
 }
 
 h2 {
@@ -69,14 +70,6 @@ h6 {
 #hero {
     text-align: center;
 } 
-
-#georgie h1 {
-    text-align: center;
-}
-
-#tailored-touchpoints h1 {
-    text-align: center;
-}
 
 #contact h2 {
     margin: 0;
@@ -393,19 +386,29 @@ footer {
         font-size: 18px;
     }
 
+    .col-md-12 {
+        width: 100%;
+
+    }
+
     .col-md-6 {
         width: 50%;
+    }
+
+    .col-md-6 h3 {
+        text-align: center;
     }
 
     #contact {
         clear: both;
     }
-
+    
 }
 
 /* large devices (1024px and larger) */
 
 @media only screen and (min-width: 1024px) {
+
     .col-lg-7 {
         width: 58.33%;
     }
