@@ -67,10 +67,6 @@ h6 {
 
 /* text styling for specific classes or ids */
 
-#hero {
-    text-align: center;
-} 
-
 #contact h2 {
     margin: 0;
 }
@@ -275,7 +271,6 @@ a:active {
 }
 
 .container-hero p {
-    width: 75%;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -415,6 +410,10 @@ footer {
 /* large devices (1024px and larger) */
 
 @media only screen and (min-width: 1024px) {
+
+    .container-hero p {
+        width: 75%;
+    }
 
     .col-lg-7 {
         width: 58.33%;
