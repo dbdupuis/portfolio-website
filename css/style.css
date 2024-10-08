@@ -308,31 +308,23 @@ a:active {
 /* header styling */
 
 header {
-    text-align: center;
     position: relative;
     background: #e2d0ba; 
 	border: solid #BDBDBD 0; 
 	box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
 	-webkit-box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
 	-moz-box-shadow: 1px 5px 35px rgba(98, 64, 65, 0.5)  ; 
+    padding: 10px 0 4px;
 }
 
 .logo {
-    max-width: 250px;
-}
-
-nav {
-    display: inline-block;
-    width: 100%;
+    max-width: 150px;
 }
 
 nav > ul {
     list-style-type: none;
     padding: 0;
-}
-
-nav >ul >li {
-    display: inline-block;
+    margin: 0;
 }
 
 nav > ul > li > a {
@@ -344,12 +336,40 @@ nav > ul > li > a {
     color: #be7C7e;
 }
 
+.navtoggle li:not(:last-child) {
+    display: none;
+  }
+
+.navtoggle, .navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 26px;
+}
+
+.navtoggle.responsive li  {
+    display: block;
+    text-align: right;
+}
+
+.navtoggle.responsive li:last-child  {
+    padding: 0 0 10px;
+}
+
 nav > ul > li > a:visited {
     color: #be7C7e;
 }
 
 nav > ul > li > a:hover {
     color: #ffffff;
+}
+
+.navtoggle.responsive li:last-child a:hover {
+    color: #be7C7e;
 }
 
 /* footer styling */
@@ -382,6 +402,26 @@ footer {
         width: auto;
         float: right;
         margin: 6px 0;
+    }
+    
+    nav > ul {
+    margin: 1em 0;
+    }
+
+    nav >ul >li {
+        display: inline-block;
+    }
+    
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .logo {
+        max-width: 250px;
     }
 
     body {
