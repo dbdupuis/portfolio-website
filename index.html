@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a612131e.js" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,23 +23,26 @@
 <body>
     <header>
         <div class="container">
-            <img class="logo" src="img/about/danielle-logo.svg" alt="Danielle logo">
-            <nav>
-                <ul>
-                    <li><a href="index.html">Work</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+            <div class="navtoggle" id="myNavtoggle">
+                <img class="logo" src="img/about/danielle-logo.svg" alt="Danielle logo">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Work</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
     <main>
         <div class="container-hero">
-                <h1>Hi there, I'm Danielle!</h1>
-                <p>I'm a UX Designer and Marketer based in Denver, Colorado. I have experience in many fields and
-                    different industries and I'm always looking to learn or create something new. Take a look at some of
-                    my latest
-                    work.</p>
+            <h1>Hi there, I'm Danielle!</h1>
+            <p>I'm a UX Designer and Marketer based in Denver, Colorado. I have experience in many fields and
+                different industries and I'm always looking to learn or create something new. Take a look at some of
+                my latest
+                work.</p>
         </div>
         <div class="container" id="work">
             <div>
@@ -279,6 +283,8 @@
             <p>Copyright Danielle DuPuis 2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 

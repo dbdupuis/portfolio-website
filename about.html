@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Nunito+Sans:ital,opsz,wdth,wght@0,6..12,75..125,200..1000;1,6..12,75..125,200..1000&display=swap"
         rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e7a612131e.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Danielle DuPuis">
@@ -22,14 +23,17 @@
 <body>
     <header>
         <div class=container>
+            <div class="navtoggle" id="myNavtoggle">
             <img class="logo" src="img/about/danielle-logo.svg" alt="Danielle logo">
             <nav>
                 <ul>
                     <li><a href="index.html">Work</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
                 </ul>
             </nav>
+            </div>
         </div>
     </header>
     <main>
@@ -135,6 +139,7 @@
             <p>Copyright Danielle DuPuis 2024</p>
         </div>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="js/scripts.js"></script>
 </body>
 
