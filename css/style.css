@@ -226,17 +226,12 @@ a:active {
 }
 
 .button.secondary {
-    background-color: transparent;
-    color: #e09294;
-    border: 3px solid #e09294;
-}
-
-.button.contact {
     font-family: "Nunito Sans", sans-serif;
     font-size: 20px;
-    background-color: #e09294;
-    border: 3px solid #e09294;
-    color: #f2f0ef;
+    padding: 5px 15px;
+    background-color: #ecbebf;
+    border: 2px solid #624041;
+    color: #624041;
 }
 
 .button:visited {
@@ -244,7 +239,14 @@ a:active {
 }
 
 .button.secondary:visited {
-    color: #e09294;
+    color: #624041;
+}
+
+.button.secondary:hover {
+    background-color: #ecbebf;
+    border: 3px solid #624041;
+    color: #624041;
+    opacity: 0.8;
 }
 
 .button:hover {
@@ -332,8 +334,8 @@ nav > ul > li > a {
     padding: 0 20px;
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.25em;
-    font-weight: 600px;
-    color: #be7C7e;
+    font-weight: 600;
+    color: #624041;
 }
 
 .navtoggle li:not(:last-child) {
@@ -361,7 +363,7 @@ nav > ul > li > a {
 }
 
 nav > ul > li > a:visited {
-    color: #be7C7e;
+    color: #624041;
 }
 
 nav > ul > li > a:hover {
@@ -430,7 +432,6 @@ footer {
 
     .col-md-12 {
         width: 100%;
-
     }
 
     .col-md-6 {
@@ -444,7 +445,6 @@ footer {
     #contact {
         clear: both;
     }
-    
 }
 
 /* large devices (1024px and larger) */
